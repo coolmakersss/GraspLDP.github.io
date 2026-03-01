@@ -255,13 +255,15 @@ body {
 
 .results-carousel {
   overflow: hidden;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
+  max-width: 1080px;
+  margin: 0 auto;
 }
 
 .results-carousel .item {
-  margin: 1rem;
+  margin: 0.6rem;
   overflow: hidden;
-  padding: 1.5rem;
+  padding: 1rem;
   font-size: 0;
   background: var(--background-primary);
   border-radius: var(--border-radius-lg);
@@ -279,8 +281,20 @@ body {
 .results-carousel video {
   margin: 0;
   border-radius: var(--border-radius);
+}
+
+.results-carousel .item img {
   width: 100%;
   height: auto;
+}
+
+.results-carousel video {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 500px;
+  margin: 0 auto;
 }
 
 .results-carousel .subtitle {
@@ -643,8 +657,12 @@ code {
   }
   
   .results-carousel .item {
-    margin: 0.5rem;
-    padding: 1rem;
+    margin: 0.4rem;
+    padding: 0.8rem;
+  }
+
+  .results-carousel video {
+    max-height: 220px;
   }
   
   .teaser .hero-body {
@@ -748,6 +766,4 @@ a:focus {
     box-shadow: none !important;
   }
 }
-
-
 
